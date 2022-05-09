@@ -1,8 +1,9 @@
 #include <iostream>
+#include <limits.h>
 using namespace std; 
 
 int maxOfArray(int arr[], int size){
-    int max= INT32_MIN;
+    int max= INT_MIN;
     for(int i =0; i<size; i++){
         if(arr[i]>max){
             max=arr[i];
@@ -11,7 +12,7 @@ int maxOfArray(int arr[], int size){
     return max;
 }
 int minOfArray(int arr[], int size){
-    int min = INT32_MAX;
+    int min = INT_MAX;
     for(int i =0; i<size; i++){
         if(arr[i]<min){
             min=arr[i];

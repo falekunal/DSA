@@ -36,3 +36,22 @@ int main(){
     // now array is reversed, for printing the array we need to call another function
     printArray(arr, n);
 }
+
+
+// 2nd apporach
+#include <iostream>
+using namespace std; 
+void swapAlternate(int arr[], int size){
+    for(int i=0; i+1<size; i+=2){
+        swap(arr[i],arr[i+1]);
+    }
+}
+int main(){
+    int n=10;
+    int arr[100]={1,2,3,4,5,6,7,8,9,0};
+    swapAlternate(arr,n);
+    for(int i=0; i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+}
